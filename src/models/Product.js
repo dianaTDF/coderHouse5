@@ -5,7 +5,7 @@ export class Product {
     #id
     #thumbnail
 
-    constructor(id,title,description="Sin descripcion",code,price,status=true,thumbnail,stock,category){
+    constructor(id,{title,description="Sin descripcion",code,price,status=true,thumbnail=null,stock,category}){
         this.#thumbnail=[]
 
         this.#id=       sec.requiredValue(id,'id')

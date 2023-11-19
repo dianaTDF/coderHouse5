@@ -1,0 +1,223 @@
+[
+  {
+    "id": "1",
+    "title": "test1",
+    "description": "test1453242",
+    "stock": 14,
+    "category": "nuevo"
+  },
+  {
+    "actualObj": {},
+    "title": "test1",
+    "description": "test1453242",
+    "stock": 14,
+    "category": "nuevo"
+  },
+  {
+    "title": "test1",
+    "description": "test1453242",
+    "stock": 14,
+    "category": "nuevo"
+  },
+  {
+    "id": 4,
+    "title": "Pan integral",
+    "description": "no era tan saludable ni sabroso",
+    "code": "004",
+    "price": 5,
+    "status": false,
+    "thumbnail": [
+      "pan.jpg",
+      "pan2.jpg"
+    ],
+    "stock": 15,
+    "category": "integral"
+  },
+  {
+    "id": 5,
+    "title": "test1",
+    "description": "test1453242",
+    "stock": 14,
+    "category": "nuevo"
+  },
+  {
+    "id": 6,
+    "title": "test1",
+    "description": "test1453242",
+    "code": "006",
+    "price": 7,
+    "status": false,
+    "thumbnail": [
+      "cereal.jpg"
+    ],
+    "stock": 14,
+    "category": "nuevo"
+  },
+  {
+    "id": 7,
+    "title": "Pan integral",
+    "description": "no era tan saludable ni sabroso",
+    "code": "004",
+    "price": 5,
+    "status": false,
+    "thumbnail": [],
+    "stock": 15,
+    "category": "integral"
+  },
+  {
+    "id": 8,
+    "title": "calabaza",
+    "description": "descripcion lalala",
+    "code": "001",
+    "price": 12,
+    "status": false,
+    "thumbnail": [
+      "image.jpg",
+      "image2.jpg"
+    ],
+    "stock": 20,
+    "category": "nuevo"
+  },
+  {
+    "id": 9,
+    "title": "Manzanas",
+    "description": "Dulces y jugosas",
+    "code": "002",
+    "price": 15,
+    "status": true,
+    "thumbnail": [
+      "manzana.jpg"
+    ],
+    "stock": 10,
+    "category": "normal"
+  },
+  {
+    "id": 10,
+    "title": "Leche",
+    "description": "Leche fresca y nutritiva",
+    "code": "003",
+    "price": 3,
+    "status": true,
+    "thumbnail": [
+      "leche.jpg"
+    ],
+    "stock": 30,
+    "category": "regular"
+  },
+  {
+    "id": 11,
+    "title": "Pan integral",
+    "description": "Pan saludable y nutritivo",
+    "code": "004",
+    "price": 5,
+    "status": false,
+    "thumbnail": [
+      "pan.jpg",
+      "pan2.jpg"
+    ],
+    "stock": 15,
+    "category": "integral"
+  },
+  {
+    "id": 12,
+    "title": "Yogur",
+    "description": "Yogur delicioso y cremoso",
+    "code": "005",
+    "price": 2,
+    "status": true,
+    "thumbnail": [],
+    "stock": 25,
+    "category": "natural"
+  },
+  {
+    "id": 13,
+    "title": "Cereal",
+    "description": "Cereal crujiente y sabroso",
+    "code": "006",
+    "price": 7,
+    "status": false,
+    "thumbnail": [
+      "cereal.jpg"
+    ],
+    "stock": 18,
+    "category": "multigrano"
+  },
+  {
+    "id": 14,
+    "title": "calabaza",
+    "description": "descripcion lalala",
+    "code": "001",
+    "price": 12,
+    "status": false,
+    "thumbnail": [
+      "image.jpg",
+      "image2.jpg"
+    ],
+    "stock": 20,
+    "category": "nuevo"
+  },
+  {
+    "id": 15,
+    "title": "Manzanas",
+    "description": "Dulces y jugosas",
+    "code": "002",
+    "price": 15,
+    "status": true,
+    "thumbnail": [
+      "manzana.jpg"
+    ],
+    "stock": 10,
+    "category": "normal"
+  },
+  {
+    "id": 16,
+    "title": "Leche",
+    "description": "Leche fresca y nutritiva",
+    "code": "003",
+    "price": 3,
+    "status": true,
+    "thumbnail": [
+      "leche.jpg"
+    ],
+    "stock": 30,
+    "category": "regular"
+  },
+  {
+    "id": 17,
+    "title": "Pan integral",
+    "description": "Pan saludable y nutritivo",
+    "code": "004",
+    "price": 5,
+    "status": false,
+    "thumbnail": [
+      "pan.jpg",
+      "pan2.jpg"
+    ],
+    "stock": 15,
+    "category": "integral"
+  },
+  {
+    "id": 18,
+    "title": "Yogur",
+    "description": "Yogur delicioso y cremoso",
+    "code": "005",
+    "price": 2,
+    "status": true,
+    "thumbnail": [],
+    "stock": 25,
+    "category": "natural"
+  },
+  {
+    "id": 19,
+    "title": "Cereal",
+    "description": "Cereal crujiente y sabroso",
+    "code": "006",
+    "price": 7,
+    "status": false,
+    "thumbnail": [
+      "cereal.jpg"
+    ],
+    "stock": 18,
+    "category": "multigrano"
+  }
+]

@@ -25,22 +25,31 @@ export async function postController(req, res) {
     const pid = req.params.pid
     const cid = req.params.cid
 
-    if(cid == null || cid == null){
-      res.json({errorMessage:'faltan datos'})
+    if(cid == null && cid == null){
+      console.log('crear carrito nuevo')
+      const newCart= await cm.add()
+      res.json({message: "Nuevo carrito creado", cart: {...newCart}})
 
     }else{
-      console.log('agregar prod a carrito')
-      const cart = await cm.idExist(cid)
 
-      if(cart){
-        
-        cm.addProduct(cid,pid)
-        const selected=await cm.search(cid)
-        res.json(selected.products)
-        
+      if(cid == null || cid == null){
+        res.json({errorMessage:'faltan datos'})
+  
       }else{
-        res.json({errorMessage:`El carrito ${cid} no existe`})        
-      }   
+        console.log('agregar prod a carrito')
+        const cart = await cm.idExist(cid)
+  
+        if(cart){
+          
+          
+          const selected= await cm.addProduct(cid,pid)
+          res.json(selected)
+          
+        }else{
+          res.json({errorMessage:`El carrito ${cid} no existe`})        
+        }   
+      } 
+      
     }
     
   }

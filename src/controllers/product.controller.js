@@ -35,8 +35,8 @@ export async function postController(req, res) {
     const prod = req.body
     
     try {
-      await pm.add(...Object.values(prod))
-      res.json(prod)
+      const newProd=await pm.add(prod)
+      res.json(newProd)
     } catch (error) {
       res.json({errorMessage:`error al ingresar los datos`})        
     }
@@ -46,9 +46,9 @@ export async function postController(req, res) {
 
 export async function putController(req, res) {
   console.log(`editar producto de id ${req.params.pid}`)
-  const prod = req.body
-  await pm.update(req.params.pid,...Object.values(prod))
-  res.json(prod)
+  const prod = req.body  
+  const result =await pm.update(req.params.pid,prod)
+  res.json(result)
 }
 
 

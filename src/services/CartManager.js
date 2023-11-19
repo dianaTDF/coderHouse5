@@ -17,7 +17,6 @@ export class CartManager extends FileManagment{
         this.objectListPush(newObject.print())
         
         await this.burn()
-
         return newObject.print()
     }
 
@@ -30,7 +29,8 @@ export class CartManager extends FileManagment{
         console.log( cart.print())
 
         //se guarda en el archivo, con el id de cartJson y la informacion renovada de la instancia cart
-        await this.update(cartJson.id, [cart.products])
+        const result = await this.update(cartJson.id, cart.print())
+        return result
     }
 
 }

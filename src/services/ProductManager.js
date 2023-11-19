@@ -9,15 +9,22 @@ export class ProductManager extends FileManagment{
     }
     
     async add(title,description,code,price,status,thumbnail,stock,category){
-        const created= await super.add([title,description,code,price,status,thumbnail,stock,category])
-        console.log( created)
+        const data ={title,description,code,price,status,thumbnail,stock,category}
+        console.log(data)
+        const created= await super.add(data)
+        return created
     }
 
-
-    async update(id,title,description,code,price,status,thumbnail,stock,category){
-        const updated= await super.update(id,[title,description,code,price,status,thumbnail,stock,category])
+/* 
+    async update(id,{title,description,code,price,status,thumbnail,stock,category}){
+        const updated= await super.update(id,{title,description,code,price,status,thumbnail,stock,category})
+*/
+    async update(id,{title,description,code,price,status,thumbnail,stock,category}){
+        const data ={title,description,code,price,status,thumbnail,stock,category}
+        //return(data)
+        const updated= await super.update(id,data)
         
-        console.log( updated)
+        return updated
     }
 
 

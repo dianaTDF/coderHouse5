@@ -84,7 +84,7 @@ export class FileManagment{
     async add(data){
         await this.load()
         this.#id++
-        const newObject= new this.#myObject(this.#id,...data)
+        const newObject= new this.#myObject(this.#id,this.cleanData(data))
         this.#objectList.push(newObject.print())
         
         await this.burn()
@@ -106,13 +106,14 @@ export class FileManagment{
 
     async update(id,data){
         if(await this.idExist(id)){
+
             const index= this.#objectList.findIndex((x) => x.id ==id)
-            const updatedObj= new this.#myObject(id,...data)
+
+            const newData=this.cleanData(data) 
 
             this.#objectList[index]={
-                id: id,
-                ...this.take(id),
-                ...updatedObj.print()
+                ...this.#objectList[index],
+                ...newData
             }
             await this.burn()
 
@@ -148,6 +149,14 @@ export class FileManagment{
         throw new Error(`ERROR: producto de id ${id} no existe`)
     }
     
+
+    //para evitar que objetos con valores en un defined alteren los ya presentes en los items
+    cleanData(object){
+        Object.keys(object).
+            forEach(atribute => object[atribute] == undefined && delete object[atribute]);
+
+       return object            
+    }
 
 
 }
